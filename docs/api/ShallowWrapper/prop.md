@@ -31,7 +31,7 @@ MyComponent.propTypes = {
 };
 
 const wrapper = shallow(<MyComponent includedProp="Success!" excludedProp="I'm not included" />);
-expect(wrapper.prop('includedProp')).to.equal('Success!');
+expect(wrapper.prop('includedProp')).toEqual('Success!');
 
 // Warning: .prop(key) only returns values for props that exist in the root node.
 // See the note above about wrapper.instance().props to return all props in the React component.
